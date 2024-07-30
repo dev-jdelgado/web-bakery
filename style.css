@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Gloria+Hallelujah&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Gloria+Hallelujah&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: transparent;
+    color: #000000;
+    padding: 5px 100px;
+    z-index: 10;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    font-family: "Jost", sans-serif;
+    text-decoration: none;
+    color: #333;
+    padding: 1rem;
+}
+
+.navbar-links ul img{
+    height: 75px;
+    width: 75px;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.homepage {
+    height: 100vh;
+    background: rgb(222,211,193);
+    background: linear-gradient(321deg, rgba(222,211,193,1) 0%, rgba(249,239,224,1) 100%);
+    display: flex;
+    overflow: hidden;
+    position: relative; 
+    margin-top: -85px;
+}
+
+.homepage-bread img {
+    filter: drop-shadow(18px 18px 10px #a7a7a7);
+}
+
+.heading-texts {
+    margin: auto;
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading-texts span, h1 {
+    display: block;
+    text-align: center;
+}
+
+.orange-text {
+    font-family: "Cormorant", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #CF8C0B;
+    gap: 0 10px;
+}
+
+.orange-text hr {
+    width: 15px;
+    border: 1px solid #CF8C0B;
+    border-radius: 50px;
+}
+
+.heading-texts h1 {
+    font-family: "Cormorant", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 96px;
+    text-align: center;
+    letter-spacing: -0.035em;
+    color: #231F20;
+    margin: 10px 0 22px 0;
+}
+
+.description {
+    font-family: "Jost", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #231F20;
+}
+
+.btn-ShopNow {
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 10px;
+    background: rgba(207, 140, 11, 0.1);
+    border: 1px solid #CF8C0B;
+}
+
+.bread01 {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    right: -20px;
+    top: 0px;
+}
+
+.bread02 {
+    position: absolute;
+    width: 33%;
+    height: auto;
+    right: -110px;
+    bottom: -145px;
+}
+
+.bread03 {
+    position: absolute;
+    width: 28%;
+    height: auto;
+    left: -85px;
+    bottom: -30px;
+}
+
+.bread04 {
+    position: absolute;
+    width: 28%;
+    height: auto;
+    left: 39%;
+    top: -120px;
+}
+
+.bread05 {
+    position: absolute;
+    width: 25%;
+    height: auto;
+    left: -57px;
+    top: -15px;
+}
+
+.patisserie {
+    display: flex;
+    height: 90vh;
+    background-color: white;
+}
+
+
+.btn-follow {
+    font-family: "Jost", sans-serif;
+    display: flex;
+    background: transparent;
+    border: 1px none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    gap: 20px;
+}
+
+.btn-follow hr {
+    width: 65px;
+    border: 1px solid #CF8C0B;
+    border-radius: 50px;
+}
+
+.follow-us {
+    margin: 30px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.follow-us img {
+    height: 20px;
+    width: 20px;
+}
+
+.bread-products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 40px;
+    gap: 35px;
+    justify-content: center;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    flex-shrink: 1;
+    width: 300px;
+    gap: 15px;
+}
+
+.product-image {
+    padding: 40px;
+    background-color: #F9EFE0;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.product-name {
+    font-family: "Cormorant", serif;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.product-description {
+    font-family: "Jost", serif;
+    font-size: 16px;
+}
+
+.product span {
+    display: block;
+}
+
+.product-pricing {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Jost", serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.product-quantity {
+    display: flex;
+    gap: 20px;
+}
+
+.product-quantity span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 15px;
+    background-color: #F9EFE0;
+    border-radius: 20px;
+}
+
+.product-quantity img {
+    height: 8px;
+    width: 11px;
+}
+
+.btn-addtocart {
+    background-color: #F9EFE0;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.btn-addtocart img {
+    height: 11px;
+    width: 11px;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .navbar {
+        background-color: transparent;
+        color: #000000;
+        padding: 5px 50px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar {
+        background-color: transparent;
+        color: #000000;
+        padding: 5px 25px;
+    }
+    
+    .heading-texts h1 {
+        font-size: 76px;
+        line-height: 76px;
+    }
+
+    .description {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .bread01 {
+        position: absolute;
+        width: 35%;
+        height: auto;
+        right: -60px;
+        top: -35px;
+    }
+    
+    .bread02 {
+        position: absolute;
+        width: 38%;
+        height: auto;
+        right: -70px;
+        bottom: -75px;
+    }
+    
+    .bread03 {
+        position: absolute;
+        width: 33%;
+        height: auto;
+        left: -35px;
+        bottom: -30px;
+    }
+    
+    .bread04 {
+        position: absolute;
+        width: 35%;
+        height: auto;
+        left: 32%;
+        top: -60px;
+    }
+    
+    .bread05 {
+        position: absolute;
+        width: 30%;
+        height: auto;
+        left: -57px;
+        top: -25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .homepage {
+        margin-top: 20px;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #ffffff;
+    }
+
+    .navbar-links ul img{
+        display: none;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+        
+    }
+
+    .navbar-links ul li a {
+        padding: .1rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    
+    .patisserie {
+        padding: 0 20px;
+    }
+
+    .homepage {
+        padding: 0 20px;
+    }
+
+    .bread01 {
+        position: absolute;
+        width: 35%;
+        height: auto;
+        right: -60px;
+        top: -35px;
+    }
+    
+    .bread02 {
+        position: absolute;
+        width: 38%;
+        height: auto;
+        right: -70px;
+        bottom: -75px;
+    }
+    
+    .bread03 {
+        position: absolute;
+        width: 33%;
+        height: auto;
+        left: -35px;
+        bottom: -30px;
+    }
+    
+    .bread04 {
+        position: absolute;
+        width: 35%;
+        height: auto;
+        left: 32%;
+        top: -60px;
+    }
+    
+    .bread05 {
+        position: absolute;
+        width: 30%;
+        height: auto;
+        left: -57px;
+        top: -25px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .heading-texts h1 {
+        font-size: 46px;
+        line-height: 46px;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+
+    .bread01 {
+        position: absolute;
+        width: 40%;
+        height: auto;
+        right: -50px;
+        top: -30px;
+    }
+    
+    .bread02 {
+        position: absolute;
+        width: 43%;
+        height: auto;
+        right: -70px;
+        bottom: -75px;
+    }
+    
+    .bread03 {
+        position: absolute;
+        width: 38%;
+        height: auto;
+        left: -35px;
+        bottom: -30px;
+    }
+    
+    .bread04 {
+        position: absolute;
+        width: 40%;
+        height: auto;
+        left: 27%;
+        top: -60px;
+    }
+    
+    .bread05 {
+        position: absolute;
+        width: 35%;
+        height: auto;
+        left: -57px;
+        top: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .bread-products {
+        padding: 30px 15px;
+    }
+    
+    .product-name {
+        font-size: 20px;
+    }
+
+    .product-description {
+        font-size: 12px;
+    }
+
+    .product-card {
+        gap: 10px;
+    }
+
+    .product-pricing {
+        font-size: 12px;
+    }
+
+    .product-quantity span {
+        gap: 10px;
+        padding: 5px 10px;
+    }
+
+
+    .bread01 {
+        position: absolute;
+        width: 60%;
+        height: auto;
+        right: -50px;
+        top: -30px;
+    }
+    
+    .bread02 {
+        position: absolute;
+        width: 60%;
+        height: auto;
+        right: -50px;
+        bottom: -55px;
+    }
+    
+    .bread03 {
+        position: absolute;
+        width: 50%;
+        height: auto;
+        left: -35px;
+        bottom: -30px;
+    }
+    
+    .bread04 {
+        position: absolute;
+        width: 40%;
+        height: auto;
+        left: 27%;
+        top: -60px;
+    }
+    
+    .bread05 {
+        position: absolute;
+        width: 50%;
+        height: auto;
+        left: -57px;
+        top: 15px;
+    }
+    
+}
